@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+
+    <channel>
+      <title>Alejandro_Programador - News</title>
+      <link>https://portafolio-alejandro.s3.amazonaws.com/index.html</link>
+      <description>Actividad 2 T5 HLAZ Gaming</description>
+	  
+		  <atom:link rel="self" type="application/rss+xml" href="./rss/rss.xml"/>
+      <image>
+        <url>https://portafolio-alejandro.s3.amazonaws.com/img/favicon.png</url>
+        <title>AlejandroAWS - News - IMG</title>
+        <link>https://portafolio-alejandro.s3.amazonaws.com/index.html</link>
+        <width>144</width>
+        <height>24</height>
+      </image>
+
+	    <item>
+        <title>Noticia 1 Lenguajes programación</title>
+        <link>https://dinahosting.com/blog/lenguajes-programacion-2024/</link>
+        <guid>https://dinahosting.com/blog/lenguajes-programacion-2024/#1</guid>
+        <pubDate>Mon, 18 Apr 2024 13:20:00 GMT</pubDate>
+        <description>Description of the first article</description>
+      </item>
+      <item>
+        <title>Noticia 2 Inteligencia Artificial</title>
+        <link>https://www.xataka.com/tag/inteligencia-artificial</link>
+        <guid>https://www.xataka.com/tag/inteligencia-artificial#2</guid>
+        <pubDate>Mon, 18 Apr 2024 12:15:12 GMT</pubDate>
+        <description>Description of the second article</description>
+      </item>
+  </channel>
+</rss>
+
+

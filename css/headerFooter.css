@@ -1,0 +1,138 @@
+@font-face {
+	font-family: Oswald;
+	src: url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+}
+
+:root{
+	--color-blanco: #fff;
+	--color-azul: #2c7dff;
+	--color-naranja: orange;
+	--color-anaranjado: orangered;
+    --bg-color: #34495e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto Condensed", sans-serif;
+	background: #2c3e50;
+	color: var(--color-blanco);
+}
+
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 350px;
+	height: 50px;
+	background-color: var(bg-color);
+	border-radius: 8px;
+	font-size: 0;
+	font-family: Oswald;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 130px;
+}
+a:nth-child(3) {
+	width: 120px;
+}
+nav .start-inicio, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-portafolio, a:nth-child(2):hover~.animation {
+	width: 130px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-contacto, a:nth-child(3):hover~.animation {
+	width: 120px;
+	left: 230px;
+	background-color: #3498db;
+}
+
+main {
+	margin: 2em;
+}
+
+footer {
+	text-align: center;
+	margin-top: 3em;
+}
+
+footer button {
+	font-size: 1.5em;
+	background-color: var(--bg-color);
+	border: 2px solid var(--color-naranja);
+	border-radius: 4%;
+	padding: 0.2em;
+}
+
+footer button:hover{
+	border: 2px solid var(--color-anaranjado);
+}
+
+footer button a{
+	color: var(--color-naranja);
+}
+
+footer button a:hover{
+	color: var(--color-anaranjado);
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style-type: none;
+	margin-left: -3em;
+}
+
+footer ul li {
+	margin: 1em;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer ul a {
+	font-size: 2.5em;
+	color: var(--color-naranja);
+}
+
+footer ul a:hover {
+	font-size: 2.7em;
+	color: var(--color-anaranjado);
+}
+
+h1 {
+	color: orangered;
+}

@@ -1,0 +1,80 @@
+body {
+    width: 90%;
+    margin: auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "datos formulario"
+    ;
+}
+
+.formulario {
+    grid-area: formulario;
+    max-width: 350px;
+}
+
+.formulario article {
+    margin-top: 1em;
+}
+
+.formulario .boton {
+    text-align: center;
+}
+
+.formulario button {
+    margin-top: 1.5em;
+    width: 350px;
+    padding: 0.3em;
+    font-size: 1em;
+    background-color: var(--color-naranja);
+    color: var(--color-blanco);
+}
+
+.formulario button:hover {
+    background-color: var(--color-anaranjado);
+}
+
+
+.error {
+    color: red;
+    display: none;
+}
+
+.errorTrue {
+    display: block;
+}
+
+.datos {
+    grid-area: datos;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.datos ul {
+    list-style-type: none;
+}
+
+.datos li {
+    margin-top: 1em;
+}
+
+
+
+@media (max-width: 790px) {
+    main {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "formulario"
+        "datos";
+    }
+    .formulario, .datos {
+        margin: auto;
+    }
+}
